@@ -1,0 +1,19 @@
+# Ignore Visual Studio files
+.vs/
+*.VC.db
+*.VC.opendb
+*.sdf
+*.suo
+*.user
+*.log
+
+# JUCE Build Artifacts
+Builds/
+*.jucer
+*.exe
+*.dll
+*.app
+*.o
+*.a
+*.so
+*.dylib

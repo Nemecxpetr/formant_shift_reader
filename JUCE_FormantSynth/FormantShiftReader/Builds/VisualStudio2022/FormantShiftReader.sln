@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 17
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FormantShiftReader - Standalone Plugin", "FormantShiftReader_StandalonePlugin.vcxproj", "{D1C5A7B7-1807-AC07-BCF5-F530AC707CDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8424E3D1-9592-41E3-B124-23AADE146809} = {8424E3D1-9592-41E3-B124-23AADE146809}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FormantShiftReader - VST3", "FormantShiftReader_VST3.vcxproj", "{7A3E0646-F3F5-CA07-48CF-7B39C21FFC32}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8424E3D1-9592-41E3-B124-23AADE146809} = {8424E3D1-9592-41E3-B124-23AADE146809}
+		{914C325D-D831-5F58-96DB-4DB8065B3942} = {914C325D-D831-5F58-96DB-4DB8065B3942}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FormantShiftReader - Shared Code", "FormantShiftReader_SharedCode.vcxproj", "{8424E3D1-9592-41E3-B124-23AADE146809}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FormantShiftReader - VST3 Manifest Helper", "FormantShiftReader_VST3ManifestHelper.vcxproj", "{914C325D-D831-5F58-96DB-4DB8065B3942}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A3E0646-F3F5-CA07-48CF-7B39C21FFC32}.Debug|x64.ActiveCfg = Debug|x64
+		{7A3E0646-F3F5-CA07-48CF-7B39C21FFC32}.Debug|x64.Build.0 = Debug|x64
+		{7A3E0646-F3F5-CA07-48CF-7B39C21FFC32}.Release|x64.ActiveCfg = Release|x64
+		{7A3E0646-F3F5-CA07-48CF-7B39C21FFC32}.Release|x64.Build.0 = Release|x64
+		{D1C5A7B7-1807-AC07-BCF5-F530AC707CDD}.Debug|x64.ActiveCfg = Debug|x64
+		{D1C5A7B7-1807-AC07-BCF5-F530AC707CDD}.Debug|x64.Build.0 = Debug|x64
+		{D1C5A7B7-1807-AC07-BCF5-F530AC707CDD}.Release|x64.ActiveCfg = Release|x64
+		{D1C5A7B7-1807-AC07-BCF5-F530AC707CDD}.Release|x64.Build.0 = Release|x64
+		{8424E3D1-9592-41E3-B124-23AADE146809}.Debug|x64.ActiveCfg = Debug|x64
+		{8424E3D1-9592-41E3-B124-23AADE146809}.Debug|x64.Build.0 = Debug|x64
+		{8424E3D1-9592-41E3-B124-23AADE146809}.Release|x64.ActiveCfg = Release|x64
+		{8424E3D1-9592-41E3-B124-23AADE146809}.Release|x64.Build.0 = Release|x64
+		{914C325D-D831-5F58-96DB-4DB8065B3942}.Debug|x64.ActiveCfg = Debug|x64
+		{914C325D-D831-5F58-96DB-4DB8065B3942}.Debug|x64.Build.0 = Debug|x64
+		{914C325D-D831-5F58-96DB-4DB8065B3942}.Release|x64.ActiveCfg = Release|x64
+		{914C325D-D831-5F58-96DB-4DB8065B3942}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
