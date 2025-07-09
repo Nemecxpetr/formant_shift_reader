@@ -24,6 +24,11 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
 
+	//==============================================================================
+    juce::Slider freqScaleSlider;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> freqAttachment;
+
+
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.

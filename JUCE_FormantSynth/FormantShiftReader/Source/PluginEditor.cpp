@@ -13,9 +13,15 @@
 FormantShiftReaderAudioProcessorEditor::FormantShiftReaderAudioProcessorEditor (FormantShiftReaderAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
+    // Set window size
     setSize (400, 300);
+
+    freqScaleSlider.setSliderStyle(juce::Slider::LinearHorizontal);
+    freqScaleSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, false, 80, 20);
+    addAndMakeVisible(freqScaleSlider);
+
+    freqAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
+        audioProcessor.parameters, "freqScale", freqScaleSlider);
 }
 
 FormantShiftReaderAudioProcessorEditor::~FormantShiftReaderAudioProcessorEditor()
@@ -35,6 +41,5 @@ void FormantShiftReaderAudioProcessorEditor::paint (juce::Graphics& g)
 
 void FormantShiftReaderAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+    freqScaleSlider.setBounds(20, 20, getWidth() - 40, 50);
 }

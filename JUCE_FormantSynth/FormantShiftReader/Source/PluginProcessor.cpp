@@ -14,14 +14,18 @@ FormantShiftReaderAudioProcessor::FormantShiftReaderAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
      : AudioProcessor (BusesProperties()
                      #if ! JucePlugin_IsMidiEffect
-                      #if ! JucePlugin_IsSynth
+                     #if ! JucePlugin_IsSynth
                        .withInput  ("Input",  juce::AudioChannelSet::stereo(), true)
-                      #endif
+                     #endif
                        .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
                      #endif
-                       )
-#endif
+                       ),
+                        parameters(*this, nullptr, "PARAMETERS", {
+                                   std::make_unique<juce::AudioParameterFloat>("freqScale", "Frequency Scale", 0.3f, 3.3f, 1.0f)
+                        })
+                     #endif
 {
+    freqScaleParam = parameters.getRawParameterValue("freqScale");
 }
 
 FormantShiftReaderAudioProcessor::~FormantShiftReaderAudioProcessor()
@@ -170,18 +174,24 @@ juce::AudioProcessorEditor* FormantShiftReaderAudioProcessor::createEditor()
 }
 
 //==============================================================================
-void FormantShiftReaderAudioProcessor::getStateInformation (juce::MemoryBlock& destData)
+void FormantShiftReaderAudioProcessor::getStateInformation(juce::MemoryBlock& destData)
 {
-    // You should use this method to store your parameters in the memory block.
-    // You could do that either as raw data, or use the XML or ValueTree classes
-    // as intermediaries to make it easy to save and load complex data.
+    auto state = parameters.copyState();
+    std::unique_ptr<juce::XmlElement> xml(state.createXml());
+    copyXmlToBinary(*xml, destData);
 }
 
-void FormantShiftReaderAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
+void FormantShiftReaderAudioProcessor::setStateInformation(const void* data, int sizeInBytes)
 {
-    // You should use this method to restore your parameters from this memory block,
-    // whose contents will have been created by the getStateInformation() call.
+    std::unique_ptr<juce::XmlElement> xml(getXmlFromBinary(data, sizeInBytes));
+
+    if (xml != nullptr)
+        if (xml->hasTagName(parameters.state.getType()))
+            parameters.replaceState(juce::ValueTree::fromXml(*xml));
 }
+
+
+
 
 //==============================================================================
 // This creates new instances of the plugin..
