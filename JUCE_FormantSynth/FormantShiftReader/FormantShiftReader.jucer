@@ -7,6 +7,10 @@
               pluginCharacteristicsValue="pluginIsSynth">
   <MAINGROUP id="o5RBpU" name="FormantShiftReader">
     <GROUP id="{F22F6A81-CF54-0E58-34E7-FFE13025E286}" name="Source">
+      <GROUP id="{741D0D73-4CE2-D527-F619-5F4FA5245209}" name="UI">
+        <FILE id="gn0IXG" name="PhonemeLoaderComponent.h" compile="0" resource="0"
+              file="Source/UI/PhonemeLoaderComponent.h"/>
+      </GROUP>
       <FILE id="hBLLFj" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="Bmlgq0" name="PluginProcessor.h" compile="0" resource="0"

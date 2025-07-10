@@ -2,6 +2,9 @@
 
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="FormantShiftReader\Source\UI">
+      <UniqueIdentifier>{C825B6BB-AE15-D525-BBC3-DB0BADD634C3}</UniqueIdentifier>
+    </Filter>
     <Filter Include="FormantShiftReader\Source">
       <UniqueIdentifier>{0EBE5457-802A-8F2B-8898-3B20A42B7AE7}</UniqueIdentifier>
     </Filter>
@@ -3534,6 +3537,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\UI\PhonemeLoaderComponent.h">
+      <Filter>FormantShiftReader\Source\UI</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\PluginProcessor.h">
       <Filter>FormantShiftReader\Source</Filter>
     </ClInclude>

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Builds\\VisualStudio2022\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8424E3D1-9592-41E3-B124-23AADE146809}|FormantShiftReader_SharedCode.vcxproj|E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8424E3D1-9592-41E3-B124-23AADE146809}|FormantShiftReader_SharedCode.vcxproj|E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8424E3D1-9592-41E3-B124-23AADE146809}|FormantShiftReader_SharedCode.vcxproj|E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginProcessor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8424E3D1-9592-41E3-B124-23AADE146809}|FormantShiftReader_SharedCode.vcxproj|E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8424E3D1-9592-41E3-B124-23AADE146809}|FormantShiftReader_SharedCode.vcxproj|E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginProcessor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8424E3D1-9592-41E3-B124-23AADE146809}|FormantShiftReader_SharedCode.vcxproj|E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginProcessor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,33 +66,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PluginEditor.cpp",
               "DocumentMoniker": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.cpp",
               "RelativeDocumentMoniker": "..\\..\\Source\\PluginEditor.cpp",
               "ToolTip": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.cpp",
               "RelativeToolTip": "..\\..\\Source\\PluginEditor.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-09T17:17:17.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PluginEditor.h",
               "DocumentMoniker": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.h",
               "RelativeDocumentMoniker": "..\\..\\Source\\PluginEditor.h",
               "ToolTip": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginEditor.h",
               "RelativeToolTip": "..\\..\\Source\\PluginEditor.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-09T17:17:14.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PluginProcessor.cpp",
               "DocumentMoniker": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginProcessor.cpp",
               "RelativeDocumentMoniker": "..\\..\\Source\\PluginProcessor.cpp",
@@ -100,12 +100,11 @@
               "RelativeToolTip": "..\\..\\Source\\PluginProcessor.cpp",
               "ViewState": "AgIAAK0AAAAAAAAAAAArwLYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-09T17:07:49.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T17:07:49.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PluginProcessor.h",
               "DocumentMoniker": "E:\\Skola\\VUT\\Zpracovani reci\\formant_shift_reader\\JUCE_FormantSynth\\FormantShiftReader\\Source\\PluginProcessor.h",
               "RelativeDocumentMoniker": "..\\..\\Source\\PluginProcessor.h",
@@ -113,8 +112,7 @@
               "RelativeToolTip": "..\\..\\Source\\PluginProcessor.h",
               "ViewState": "AgIAACoAAAAAAAAAAAAAADMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-09T17:06:39.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T17:06:39.337Z"
             }
           ]
         }

@@ -22,6 +22,8 @@ FormantShiftReaderAudioProcessorEditor::FormantShiftReaderAudioProcessorEditor (
 
     freqAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
         audioProcessor.parameters, "freqScale", freqScaleSlider);
+
+    addAndMakeVisible(phonemeLoader);
 }
 
 FormantShiftReaderAudioProcessorEditor::~FormantShiftReaderAudioProcessorEditor()
@@ -41,5 +43,9 @@ void FormantShiftReaderAudioProcessorEditor::paint (juce::Graphics& g)
 
 void FormantShiftReaderAudioProcessorEditor::resized()
 {
+
     freqScaleSlider.setBounds(20, 20, getWidth() - 40, 50);
+
+    freqScaleSlider.setBounds(20, 20, getWidth() - 40, 50);
+    phonemeLoader.setBounds(20, 80, getWidth() - 40, getHeight() - 100);
 }

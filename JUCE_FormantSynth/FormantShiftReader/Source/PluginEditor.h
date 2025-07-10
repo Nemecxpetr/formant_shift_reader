@@ -10,6 +10,7 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "UI/PhonemeLoaderComponent.h"
 
 //==============================================================================
 /**
@@ -27,6 +28,8 @@ public:
 	//==============================================================================
     juce::Slider freqScaleSlider;
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> freqAttachment;
+
+    PhonemeLoaderComponent phonemeLoader;
 
 
 private:
