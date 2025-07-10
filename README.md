@@ -69,16 +69,4 @@ The plugin version is currently in development. It uses the [JUCE](https://juce.
 
 ---
 
-## 🧠 Inspiration
-
-Inspired by classic formant synthesizers and academic research in text-driven vocal synthesis.
-
----
-
-## 🔗 License
-
-MIT License (see `LICENSE` file)
-
----
-
 *Feel free to clone, fork, experiment or contribute!*
